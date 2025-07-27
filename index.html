@@ -1,55 +1,267 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Akshay Kumar Prajapati | Portfolio</title>
-    <link rel="stylesheet" href="./src/css/style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Akshay Kumar Prajapati | Portfolio</title>
 
+  <!-- Bootstrap & AOS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css"/>
+
+  <style>
+    body {
+      background-color: #0d0d0d;
+      color: #f1f1f1;
+      font-family: 'Segoe UI', sans-serif;
+      line-height: 1.7;
+    }
+
+    a {
+      text-decoration: none;
+      color: #ffc107;
+    }
+
+    .navbar {
+      background-color: #111;
+      padding: 1rem 2rem;
+    }
+
+    .navbar-brand {
+      color: #ffc107;
+      font-weight: bold;
+      font-size: 1.5rem;
+    }
+
+    .nav-link {
+      color: white !important;
+      margin-left: 1rem;
+      transition: 0.3s;
+    }
+
+    .nav-link:hover {
+      color: #ffc107 !important;
+    }
+
+    .hero {
+      text-align: center;
+      padding: 3rem 1rem;
+    }
+
+    .hero img {
+      width: 150px;
+      border-radius: 50%;
+      margin-bottom: 1rem;
+      border: 3px solid #ffc107;
+    }
+
+    h2.section-title {
+      color: #ffc107;
+      margin-top: 3rem;
+      margin-bottom: 1.5rem;
+      text-align: center;
+    }
+
+    .timeline {
+      border-left: 3px solid #ffc107;
+      padding-left: 2rem;
+    }
+
+    .timeline-item {
+      margin-bottom: 2rem;
+    }
+
+    .timeline-item h5 {
+      color: #ffc107;
+    }
+
+    .project-card {
+      background-color: #1a1a1a;
+      border: 1px solid #333;
+      border-left: 5px solid #ffc107;
+      padding: 1.5rem;
+      border-radius: 12px;
+      margin-bottom: 1.5rem;
+      box-shadow: 0 0 10px rgba(255, 193, 7, 0.1);
+    }
+
+    .social-icons a {
+      margin: 0 10px;
+      font-size: 1.3rem;
+      color: #f1f1f1;
+      transition: 0.3s;
+    }
+
+    .social-icons a:hover {
+      color: #ffc107;
+    }
+
+    footer {
+      background-color: #111;
+      color: #aaa;
+      padding: 1rem;
+      text-align: center;
+      font-size: 0.9rem;
+    }
+  </style>
 </head>
-
-<body class="bg-black text-white p-4">
-    <header class="text-center mb-8">
-        <h1 class="text-4xl font-bold">Akshay Kumar Prajapati</h1>
-        <p class="text-xl">Web Developer | Designer | Content Creator</p>
-    </header>
-    <section class="mb-8">
-        <h2 class="text-3xl font-semibold mb-4">About Me</h2>
-        <p class="text-lg">I am a passionate web developer with a keen interest in creating dynamic and responsive web
-            applications. I love to explore new technologies and continuously improve my skills.</p>
-    </section>
-
-    <section class="mb-8">
-        <h2 class="text-3xl font-semibold mb-4">Projects</h2>
-        <ul class="list-disc pl-5">
-            <li><strong>Project 1:</strong> A responsive website built with HTML, CSS, and JavaScript.</li>
-            <li><strong>Project 2:</strong> A web application using React and Node.js.</li>
-            <li><strong>Project 3:</strong> A personal blog created with Jekyll.</li>
+<body data-bs-theme="dark">
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg sticky-top">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Akshay</a>
+      <button class="navbar-toggler bg-warning" type="button" data-bs-toggle="collapse" data-bs-target="#nav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="nav">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link" href="#education">Education</a></li>
+          <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
+          <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+          <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+          <li class="nav-item"><a class="nav-link" href="#hire">Hire</a></li>
         </ul>
-    </section>
-    <section class="mb-8">
-        <h2 class="text-3xl font-semibold mb-4">Skills</h2>
-        <ul class="list-disc pl-5">
-            <li>HTML, CSS, JavaScript</li>
-            <li>React, Node.js</li>
-            <li>Responsive Design</li>
-            <li>Version Control (Git)</li>
-        </ul>
-        </div>
-        <section class="mb-8">
-            <h2 class="text-3xl font-semibold mb-4">Contact</h2>
-            <p class="text-lg">Feel free to reach out to me via email or phone for any inquiries or collaborations.</p>
-        </section>
+      </div>
+    </div>
+  </nav>
 
-        <div class="container my-5">
-            <section class="bg-light p-4 rounded shadow-sm">
-                <h2 class="mb-3">📞 Let’s Connect</h2>
-                <p class="mb-2"><strong>Email:</strong> akshaykumarprajapati@hotmail.com</p>
-                <p class="mb-0"><strong>Phone/WhatsApp:</strong> +91 6200305994</p>
-            </section>
-        </div>
-        <script src="./src/js/script.js"></script>
+  <!-- Hero -->
+  <section class="hero" data-aos="fade-in">
+    <img src="your-image.jpg" alt="Akshay" onerror="this.src='default.jpg'" />
+    <h1 class="mt-3">Akshay Kumar Prajapati</h1>
+    <p class="text-muted">Final-year B.Tech CSE | Android Developer</p>
+    <div class="social-icons mt-2">
+      <a href="https://linkedin.com/in/yourusername" target="_blank"><i class="fab fa-linkedin"></i></a>
+      <a href="https://github.com/yourusername" target="_blank"><i class="fab fa-github"></i></a>
+      <a href="#"><i class="fab fa-instagram"></i></a>
+      <a href="#"><i class="fab fa-twitter"></i></a>
+      <a href="mailto:akshaykumarprajapati@hotmail.com"><i class="fas fa-envelope"></i></a>
+      <a href="tel:+916200305994"><i class="fas fa-phone"></i></a>
+    </div>
+  </section>
+
+  <!-- Education -->
+  <section id="education" class="container" data-aos="fade-up">
+    <h2 class="section-title">Education</h2>
+    <div class="timeline">
+      <div class="timeline-item">
+        <h5>2017-2019</h5>
+        <p>10th Pass, XYZ High School, Koderma</p>
+      </div>
+      <div class="timeline-item">
+        <h5>2021</h5>
+        <p>12th Pass, ABC College, Koderma</p>
+      </div>
+      <div class="timeline-item">
+        <h5>2025 - Present</h5>
+        <p>B.Tech in Computer Science, Ramgovind Institute of Technology (JUT Ranchi)</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Experience -->
+  <section id="experience" class="container" data-aos="fade-up">
+    <h2 class="section-title">Experience</h2>
+    <div class="timeline">
+      <div class="timeline-item">
+        <h5>Nov 2023 - June 2024</h5>
+        <p>Codezeal Pvt Ltd, Ranchi – Android Development (Java & Kotlin)</p>
+      </div>
+      <div class="timeline-item">
+        <h5>Oct 2024 - Feb 2025</h5>
+        <p>Quiz Parlour, Patna – Android Development (Kotlin)</p>
+      </div>
+      <div class="timeline-item">
+        <h5>2025 - Present</h5>
+        <p>Fussion Software Institute, Pune – Java Development (Spring Boot)</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills -->
+  <section id="skills" class="container" data-aos="fade-up">
+    <h2 class="section-title">Skills</h2>
+    <ul class="list-inline">
+      <li class="list-inline-item"><i class="fab fa-java"></i> Java</li>
+      <li class="list-inline-item"><i class="fab fa-android"></i> Kotlin</li>
+      <li class="list-inline-item"><i class="fab fa-python"></i> Python</li>
+      <li class="list-inline-item"><i class="fab fa-html5"></i> HTML</li>
+      <li class="list-inline-item"><i class="fab fa-css3-alt"></i> CSS</li>
+      <li class="list-inline-item"><i class="fab fa-js"></i> JavaScript</li>
+      <li class="list-inline-item"><i class="fab fa-react"></i> ReactJS</li>
+    </ul>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects" class="container" data-aos="fade-up">
+    <h2 class="section-title">Projects</h2>
+    <div class="project-card">
+      <h5>Quiz Parlour</h5>
+      <p>An Android app for quizzes on various exam topics, built with Kotlin.</p>
+    </div>
+    <div class="project-card">
+      <h5>E-commerce App</h5>
+      <p>Users can browse items, add to cart, and purchase.</p>
+    </div>
+    <div class="project-card">
+      <h5>Personal Portfolio</h5>
+      <p>A personal portfolio website built with HTML, CSS, and JavaScript.</p>
+    </div>
+    <div class="project-card">
+      <h5>RentPG</h5>
+      <p>PG rental app for searching and booking accommodations.</p>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="container" data-aos="fade-up">
+    <h2 class="section-title">About Me</h2>
+    <p>I’m a passionate Android developer currently in my final year of B.Tech (CSE). I specialize in building user-friendly mobile apps and web interfaces using Kotlin, Java, Flutter and modern web technologies.</p>
+    <p>I have honed my skills through various projects and internships, focusing on creating efficient and scalable applications.</p>
+  </section>
+
+  <!-- Companies -->
+  <section id="companies" class="container" data-aos="fade-up">
+    <h2 class="section-title">Companies I Built / Worked With</h2>
+    <div class="company">
+      <h5>Panlogic Solution Team, Koderma</h5>
+      <p>A software development company delivering innovative solutions across industries.</p>
+    </div>
+    <div class="company">
+      <h5>Akshay Prajapati Software Services, Pune</h5>
+      <p>A team of experts focused on delivering custom software for global clients.</p>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="container" data-aos="fade-up">
+    <h2 class="section-title">Contact</h2>
+    <p>Email: <a href="mailto:akshaykumarprajapati@hotmail.com">akshaykumarprajapati@hotmail.com</a></p>
+    <p>Phone: +91 6200305994</p>
+    <div class="text-center my-4">
+      <a href="Akshay_Resume.pdf" class="btn btn-warning" download>
+        <i class="fas fa-file-download"></i> Download Resume
+      </a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>Thank you for visiting my portfolio!</p>
+    <p>Feel free to connect with me on social media or reach out via email.</p>
+    <p class="text-muted">
+      <a href="https://github.com/yourusername" target="_blank">GitHub</a> |
+      <a href="https://www.linkedin.com/in/yourusername" target="_blank">LinkedIn</a>
+    </p>
+    <p class="text-muted">© 2025 Akshay Kumar Prajapati. All rights reserved.</p>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <script>AOS.init();</script>
 </body>
-
 </html>
